@@ -155,9 +155,9 @@ body{
         gap: 15vh;
 
         .card{
-            background-color: $black;
             border-color: $black;
             border-radius: none;
+            background-image: linear-gradient(to right, $yellow , transparent);
         }
         .card-text{
             color: $white;
@@ -233,6 +233,63 @@ body{
     }
 
  }
+
+ .footer-img{
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+ }
+
+
+.container-footer{
+    max-width: 100%;
+    background-color: $yellow;
+    padding: 5% 10%;
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 4rem;
+      }
+
+    &-logo{
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+    &-descrp{
+        margin-top: 5vh;
+        width: 35vw;
+    }
+    &-descrp-text{
+        font-size: 1rem;
+    }
+    &-info{
+        margin-left: 50vw;
+    }
+    &-info-text{
+        font-size: 1rem;
+        margin-top: 5vh;
+    }
+
+    &-title{
+        color: $black;
+        text-align: center;
+        margin: 0 auto;
+        padding: 5% 5%;
+    }
+    &-social{
+        width: fit-content;
+        margin: 0 auto;
+
+        &-social-logo{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
 
 
 
