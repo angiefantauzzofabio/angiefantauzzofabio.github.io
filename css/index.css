@@ -17,6 +17,7 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 5% 5%;
+  font-style: "DM Sans", sans-serif, arial;
 }
 .container-us-sections {
   text-align: center;
@@ -27,6 +28,7 @@ body {
 .container-us-sections-info-text {
   color: #F8C02D;
   padding: 5% 5%;
+  font-style: "DM Sans", sans-serif, arial;
 }
 .container-us-sections-buttons {
   display: flex;
@@ -87,6 +89,7 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 5% 5%;
+  font-style: "DM Sans", sans-serif, arial;
 }
 .container-news-cards {
   display: flex;
@@ -100,6 +103,7 @@ body {
 }
 .container-news-cards .card-text {
   color: #E5E5E5;
+  font-style: "DM Sans", sans-serif, arial;
 }
 @media (max-width: 800px) {
   .container-news .flex-container {
@@ -115,6 +119,7 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 5% 5%;
+  font-style: "DM Sans", sans-serif, arial;
 }
 .container-sections-subtitle {
   text-align: center;
@@ -174,11 +179,13 @@ body {
   font-weight: bold;
   font-size: 1rem;
   margin-top: 20vh;
+  font-style: "DM Sans", sans-serif, arial;
 }
 @media (max-width: 900px) {
   .container-sections .grid-container .grid-item-text {
     margin-top: 0;
     font-size: 0.5rem;
+    font-style: "DM Sans", sans-serif, arial;
   }
 }
 .container-sections .btn {
@@ -192,6 +199,7 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 5% 5%;
+  font-style: "DM Sans", sans-serif, arial;
 }
 .container-ending-img {
   margin: 0 auto;
@@ -226,6 +234,7 @@ body {
 }
 .container-footer-descrp-text {
   font-size: 1rem;
+  font-style: "DM Sans", sans-serif, arial;
 }
 .container-footer-info {
   margin-left: 50vw;
@@ -233,12 +242,14 @@ body {
 .container-footer-info-text {
   font-size: 1rem;
   margin-top: 5vh;
+  font-style: "DM Sans", sans-serif, arial;
 }
 .container-footer-title {
   color: #1D1A1B;
   text-align: center;
   margin: 0 auto;
   padding: 5% 5%;
+  font-style: "DM Sans", sans-serif, arial;
 }
 .container-footer-social {
   width: fit-content;

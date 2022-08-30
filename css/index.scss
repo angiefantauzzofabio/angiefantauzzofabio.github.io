@@ -4,6 +4,7 @@ $light-red: #FF614C;
 $red: #FF2E00;
 $grey: #333333; 
 $black: #1D1A1B; 
+$mainFont: 'DM Sans', sans-serif, arial;
 
 
 body{
@@ -27,6 +28,7 @@ body{
         text-align: center;
         margin: 0 auto;
         padding: 5% 5%;
+        font-style: $mainFont;
     }
 
     &-sections{
@@ -38,6 +40,7 @@ body{
     &-sections-info-text{
         color: $yellow;
         padding: 5% 5%;
+        font-style: $mainFont;
     }
     &-sections-buttons{
         display: flex;
@@ -108,7 +111,7 @@ body{
         text-align: center;
         margin: 0 auto;
         padding: 5% 5%;
-        
+        font-style: $mainFont;
     }
 
     &-cards{
@@ -124,6 +127,7 @@ body{
          }
          .card-text{
             color: $white;
+            font-style: $mainFont;
          }
 
     }
@@ -144,6 +148,7 @@ body{
         text-align: center;
         margin: 0 auto;
         padding: 5% 5%;
+        font-style: $mainFont;
     }
 
     &-subtitle{
@@ -211,6 +216,7 @@ body{
                 font-weight: bold;
                 font-size: 1rem;
                 margin-top: 20vh;
+                font-style: $mainFont;
             }
         }
 
@@ -218,6 +224,7 @@ body{
             .grid-item-text{
                 margin-top: 0;
                 font-size: 0.5rem;
+                font-style: $mainFont;
             }
         }
 
@@ -239,6 +246,7 @@ body{
         text-align: center;
         margin: 0 auto;
         padding: 5% 5%;
+        font-style: $mainFont;
     }
 
     &-img{
@@ -278,6 +286,7 @@ body{
     }
     &-descrp-text{
         font-size: 1rem;
+        font-style: $mainFont;
     }
     &-info{
         margin-left: 50vw;
@@ -285,6 +294,7 @@ body{
     &-info-text{
         font-size: 1rem;
         margin-top: 5vh;
+        font-style: $mainFont;
     }
 
     &-title{
@@ -292,6 +302,7 @@ body{
         text-align: center;
         margin: 0 auto;
         padding: 5% 5%;
+        font-style: $mainFont;
     }
     &-social{
         width: fit-content;
@@ -305,7 +316,6 @@ body{
 
 }
 
-$mainFont: 'DM Sans', sans-serif, arial;
 
 // MIXIN //
 @mixin title {
