@@ -312,7 +312,7 @@ body {
 .hero {
   height: 70vh;
   width: 100%;
-  background-image: url(/Users/usuario/BVVL/assets/background1.png);
+  background-image: url(../assets/background1.png);
   background-size: cover;
   background-position: 75%;
   filter: grayscale(80%);
