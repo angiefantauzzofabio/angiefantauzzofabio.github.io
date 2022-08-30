@@ -8,7 +8,86 @@
     </head>
 
     <body style="background-color: #1D1A1B;">
+        <header>
+        <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">INGRESO</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">DEPARTAMENTO TÉCNICO</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Capacitación</a></li>
+                    <li><a class="dropdown-item" href="#">Acesoramiento</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">COLABORAR</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <div class="hero"></div>
+        <!-- El div counter esta para separar el titulo del div que tiene el grid, asi el titulo puede quedar centrado
+        si meto el titulo dentro del whrapper, va a verse como un elemento mas de la primer columna. Una buena solucion puede
+        ser ponerlo dentro del grid PERO a la primer fila y columna que la ocupe solo el titulo y que despues de eso, se formen
+        columnas de dos en dos. Si te sirve para ver como funciona grid podemos pensar juntos o podes buscar en el buen
+        amigo youtube o stack -->
+        <div class="counter">
+            <h5 class="counter__title">SEPTIEMBRE</h5>
+            <!-- Fijate que para respetar la forma de BEM, a partir de aca cree un nuevo bloque, es mejor mantener las clases con la forma
+            de bloque, elemento, modificador y no empezar a hacer bloque__elemento--modificador--modificador--modificador, es mejor crear
+            bloques dentros de esos bloques. Despues si queres hay varias paginas con buenas practicas
+            Asi las clases quedan cortas, fijate que en los estilos esta dividido -->
+            <div class="counter__wrapper">
+            <div class="wrapper__item">
+                <span class="wrapper__item--icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                </svg></span>
+                <h4 class="wrapper__item--number">1</h4>
+                <p class="wrapper__item--text">INCENDIOS APAGADOS</p>
+            </div>
+
+            <div class="wrapper__item">
+                <span class="wrapper__item--icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                </svg></span>
+                <h4 class="wrapper__item--number">1</h4>
+                <p class="wrapper__item--text">RESCATES REALIZADOS</p>
+            </div>
+
+            <div class="wrapper__item">
+                <span class="wrapper__item--icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                </svg></span>
+                <h4 class="wrapper__item--number">1</h4>
+                <p class="wrapper__item--text">ANIMALES RESCATADOS</p>
+            </div>
+
+            <div class="wrapper__item">
+                <span class="wrapper__item--icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                </svg></span>
+                <h4 class="wrapper__item--number">1</h4>
+                <p class="wrapper__item--text">PREVENCIONES REALIZADAS</p>
+            </div>
+            </div>
+        </div>
+        </header>
 
         <!--NOSOTROS-->
         <hr class="lines">
@@ -102,11 +181,13 @@
             <h5 class="container-sections-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</h5> 
 
             <div class="container-sections-cards">
-                <div class="card" style="width: 30rem;">
-                    <img src="/Users/usuario/landingBVVL/assets/dptotecnico1.png" class="card-img-top" alt="..."">
-                </div> 
-                <div class="card" style="width: 30rem;">
+                <div class="card1">
                     <img src="/Users/usuario/landingBVVL/assets/dptotecnico1.png" class="card-img-top" alt="...">
+                  
+                </div> 
+                <div class="card2" >
+                    <img src="/Users/usuario/landingBVVL/assets/dptotecnico1.png" class="card-img-top" alt="...">
+                    <div class="card-text">asesoramiento tecnico</div>
                 </div> 
             </div>
         

@@ -157,13 +157,25 @@ body{
         padding: 5% 5%;
         gap: 15vh;
 
-        .card{
+        .card1{
             border-color: $black;
             border-radius: none;
             background-image: linear-gradient(to right, $yellow , transparent);
+            width: 30rem;
+            display: flex;
+         
         }
-        .card-text{
-            color: $white;
+        .card2{
+            border-color: $black;
+            border-radius: none;
+            background-image: linear-gradient(to right, $red , transparent);
+            width: 30rem;
+            display: flex;
+           
+
+        }
+        .card-img-top{
+            z-index: -1;
         }
     }
     &-img{
@@ -291,6 +303,161 @@ body{
         }
     }
 
+}
+
+$mainFont: 'DM Sans', sans-serif, arial;
+
+// MIXIN //
+@mixin title {
+    font-family: $mainFont;
+    font-size: 2rem;
+}
+
+@mixin subtitle {
+    font-family: $mainFont;
+    font-size: 1.5rem;
+}
+
+@mixin text {
+    font-family: $mainFont;
+    font-size: 1rem;
+}
+
+@mixin hrAmarillo {
+    height: 0.5rem;
+    background-color: #F8C02D;
+    margin: 3rem;
+}
+
+// Hasta que empecemos a modularizar, o sea mandar los mixin, las variables y otras cosas a otras hojas de estilos, lo dejo aca arriba
+
+
+
+* {
+    margin: 0px;
+    border: 0px;
+}
+
+.body {
+    background-color: $black;
+    font-family: $mainFont;
+}
+.navbar {
+    background-color: $black;
+    font-family: $mainFont;
+
+}
+
+// Estas variables son de bootstrap, lo que hago para saber como modificarlas es probar que hace cada una desde el inspeccionar elementos
+// del navegador, meter mano hasta encontrar como lo quiero dejar y pongo las propiedades que le modifque aca
+.navbar-toggler {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.dropdown-menu {
+    --bs-dropdown-bg: $black;
+    --bs-dropdown-color: $yellow;
+    }
+
+    .dropdown-item {
+        display: block;
+        width: 100%;
+        padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+        clear: both;
+        font-weight: 400;
+        color: $yellow;
+        text-align: inherit;
+        text-decoration: none;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+        }
+
+.navbar-dark {
+    --bs-navbar-color: #F8C02D;
+    --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+    --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+    --bs-navbar-active-color: #fff;
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+}
+
+.hero{
+    height: 70vh;
+    width: 100%;
+    background-image: url(/Users/usuario/BVVL/assets/background1.png);
+    background-size: cover;
+    background-position: 75%;
+    // le agrega el filtro de blanco y negro
+    filter: grayscale(80%);
+}
+
+
+.counter {
+    // Por alguna razon que voy a tratar de averiguar, cuando le pongo un filtro a la imagen me la pasa arriba de este div
+    // Asi que se arregla con un relative
+    position: relative;
+    // Este margen negativo, hace que el div del contador 'quede montado' sobre el fondo del hero, o sea que el 20% del contador esta sobre el hero
+    margin-top: -20%;
+    // El fondo hace que la parte superior del contador se funda sobre el final del fondo del hero (el valor de rgba es $black pasado a rgb y el ultimo valor, es la opacidad que va de 0 que es transparente a 1 que es solido, o sea que 0.5 seria un 50% de opacidad
+    background: linear-gradient(rgba(29, 26, 27,0),rgba(29, 26, 27,1) 10%);    
+   
+    &__title {
+        display: flex;
+        justify-content: center;
+        color: $yellow;
+    }
+    
+    &__wrapper {
+        display: grid;
+        // el gap es la distancia que se forma entre cada uno de los elementos del grid, o sea la distancia que hay entre, por ejemplo, el contador de incendios y rescates
+        grid-gap: 1rem;
+        // este valor asigna la cantidad de columnas, en este caso son dos, o sea incendio y rescate quedan en la misma linea, el repeat hace que se siga manteniendo esa misma estructura para abajo
+        // Si cambias el 2 por otro numero, por ejemplo 4 los cuatro elementos quedan sobre una sola linea porque ahora va a haber 4 columnas
+        // fr es la proporcion del tamano de cada elemento, o sea que tanto espacio horizontal va a ocupar, en este caso no va a generar variaciones
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5% 10%;
+    }
+}
+
+.wrapper {
+   
+    &__item {
+        // Esto ya es dentro de cada elemento, o sea lo que va adentro de lo que tiene border
+        // Esta con flex column para que se ordene, el icono, el numero y el texto uno abajo del otro
+        display: flex;
+        flex-direction: column;
+        // el evenly hace que las cosas se separen entre si proporcionalmente con el margen, o sea que cada elemento va a tener la misma distancia entre si que con el margen
+        // es similar al space arround pero a veces queda mejor, es cuestion de probar
+        justify-content: space-evenly;
+        // alinea los elementos hacia el centro del rectangulo creado con el border
+        align-items: center;
+        // hace que todos los elementos ocupen minimamente ese espacio, es para evitar que si queda chico ocupe menos que los demas
+        // acordate que vw es como decir el 30% del ancho total de la pantalla (es como el vh que es view height, lo mismo pero a lo largo)
+        min-width: 30vw;
+        // genera el borde, solido, de color amarillo
+        border: 0.3rem solid $yellow;
+        // le da el mismo espacio vacio a todos los elementos
+        padding: 1rem;
+        margin: 1rem 0px;
+
+        &--icon{
+            color: $yellow;
+        }
+
+        &--number{
+            color: $yellow;
+        }
+
+        &--text{
+            color: $yellow;
+            // centra el texto a lo word, aunque este afectado por el align center del flex, el texto siempre queda por defecto alineado
+            // sobre la izquierda, igual que en word
+            text-align: center;
+        }
+    }
 }
 
 
