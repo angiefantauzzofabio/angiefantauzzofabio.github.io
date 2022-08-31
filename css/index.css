@@ -247,6 +247,7 @@ body {
   font-size: 1rem;
   margin-top: 5vh;
   font-style: "DM Sans", sans-serif, arial;
+  width: fit-content;
 }
 .container-footer-title {
   color: #1D1A1B;
