@@ -97,9 +97,11 @@ body{
  
           h1 { 
             display: none;
+            max-width: 100%;
           }
           .btn{
             font-size: 0.5rem;
+            max-width: 100%;
           }
        }
     }
@@ -135,6 +137,7 @@ body{
     @media (max-width: 800px) {
         .flex-container {
           flex-direction: column;
+          max-width: 100%;
         }
     }
 
@@ -220,11 +223,12 @@ body{
             }
         }
 
-        @media (max-width: 900px) {
+        @media (max-width: 800px) {
             .grid-item-text{
                 margin-top: 0;
                 font-size: 0.5rem;
                 font-style: $mainFont;
+                max-width: 100%;
             }
         }
 

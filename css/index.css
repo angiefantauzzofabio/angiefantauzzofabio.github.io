@@ -78,9 +78,11 @@ body {
 @media only screen and (max-width: 800px) {
   .ingreso-section h1 {
     display: none;
+    max-width: 100%;
   }
   .ingreso-section .btn {
     font-size: 0.5rem;
+    max-width: 100%;
   }
 }
 
@@ -108,6 +110,7 @@ body {
 @media (max-width: 800px) {
   .container-news .flex-container {
     flex-direction: column;
+    max-width: 100%;
   }
 }
 
@@ -181,11 +184,12 @@ body {
   margin-top: 20vh;
   font-style: "DM Sans", sans-serif, arial;
 }
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .container-sections .grid-container .grid-item-text {
     margin-top: 0;
     font-size: 0.5rem;
     font-style: "DM Sans", sans-serif, arial;
+    max-width: 100%;
   }
 }
 .container-sections .btn {
