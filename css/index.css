@@ -1,6 +1,11 @@
 body {
   background-color: #1D1A1B;
 }
+@media only screen and (max-width: 800px) {
+  body {
+    width: fit-content;
+  }
+}
 
 .lines {
   opacity: 100%;
@@ -225,6 +230,7 @@ body {
 .container-footer .grid-container {
   display: grid;
   grid-template-columns: auto auto;
+  gap: 4rem;
 }
 .container-footer-logo {
   max-width: 100%;

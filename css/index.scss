@@ -9,7 +9,12 @@ $mainFont: 'DM Sans', sans-serif, arial;
 
 body{
    background-color: $black;
-}
+   @media only screen and (max-width: 800px) {
+        width:fit-content;
+    }
+ }
+
+
 .lines{
     opacity: 100%;
     color: $yellow;
@@ -276,6 +281,7 @@ body{
     .grid-container {
         display: grid;
         grid-template-columns: auto auto;
+        gap: 4rem;
       }
 
     &-logo{
