@@ -9,10 +9,7 @@ $mainFont: 'DM Sans', sans-serif, arial;
 
 body{
    background-color: $black;
-   @media only screen and (max-width: 800px) {
-        width:fit-content;
-        
-    }
+
  }
 
 

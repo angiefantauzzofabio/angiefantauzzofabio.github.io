@@ -1,11 +1,6 @@
 body {
   background-color: #1D1A1B;
 }
-@media only screen and (max-width: 800px) {
-  body {
-    width: fit-content;
-  }
-}
 
 .lines {
   opacity: 100%;
