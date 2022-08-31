@@ -1,5 +1,6 @@
 body {
   background-color: #1D1A1B;
+  transition: background-color 1s ease;
 }
 
 .lines {

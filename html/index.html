@@ -8,9 +8,25 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     </head>
 
-    
+    <!-- <script>
+        $(window).scroll(function(){
+            var $window = $(window),
+                $body = $('body'),
+                $panel = $('.panel')
+            var scoll = $window.scrollTop() + ($window.height()/ 3);
+            $panel.each(function(){
+                var $this = $(this);
+                if($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+                    $body.removeClass (function(index, css){
+                        return (css.match(/(ʌ | \s)color-\S+/g) ||[]).join('');
+                    });
+                    $body .addClass('color-' + $(this).data('color'));
+                }
+            });
+        }).scroll();
+    </script> -->
 
-    <body style="background-color: #1D1A1B;">
+    <body style="background-color: #1D1A1B;  transition: background-color 1s ease;">
         <header>
         <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
             <div class="container-fluid">
@@ -25,20 +41,20 @@
                     <a class="nav-link active" aria-current="page" href="#">INICIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">NOSOTROS</a>
+                    <a class="nav-link" href="#nosotros">NOSOTROS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">INGRESO</a>
+                    <a class="nav-link" href="#ingreso">INGRESO</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">DEPARTAMENTO TÉCNICO</a>
+                    <a class="nav-link dropdown-toggle" href="#dptoTecnico" data-bs-toggle="dropdown" aria-expanded="false">DEPARTAMENTO TÉCNICO</a>
                     <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Capacitación</a></li>
                     <li><a class="dropdown-item" href="#">Acesoramiento</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">COLABORAR</a>
+                    <a class="nav-link" href="#colaborar">COLABORAR</a>
                 </li>
                 </ul>
             </div>
@@ -92,9 +108,9 @@
         </div>
         </header>
 
-        <!--NOSOTROS-->
+            <!--NOSOTROS-->
         <hr class="lines">
-        <div class="container-us">
+        <div class="container-us" id="colaborar">
             <h1 class="container-us-title">SOMOS VOLUNTARIOS</h1>
             <div class="container-us-sections">
                 <div class="container-us-sections-info">
@@ -118,7 +134,7 @@
         </div>
         <hr class="lines">
          <!--INGRESOS-->
-        <div class="ingreso">
+        <div class="ingreso" id="ingreso">
             <div class="ingreso-section">
                 <img src="../assets/ingresa.png" class="ingreso-section-img">
                 <button type="button" class="btn btn-primary2 btn-lg" onclick="window.open('https:www.google.com/intl/es-419_ar/forms/about/')" >INGRESÁ A BOMBEROS</button> 
@@ -126,6 +142,7 @@
             </div>
         </div>
         <hr class="lines">
+        
 
         <div class="container-news">
             <h1 class="container-news-title">NOVEDADES</h1>
@@ -179,7 +196,7 @@
 
         <hr class="lines">
 
-        <div class="container-sections">
+        <div class="container-sections" id="dptoTecnico">
             <h1 class="container-sections-title">DEPARTAMENTO TÉCNICO</h1>
             <h5 class="container-sections-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</h5> 
 
@@ -195,7 +212,7 @@
         
             <img src="../assets/dptotecnico2.png" class="container-sections-img">
        
-            <h1 class="container-sections-title">SOBRE NOSOTROS</h1>
+            <h1 class="container-sections-title" id="nosotros">SOBRE NOSOTROS</h1>
             <div class="grid-container">
                 <div class="grid-item">
                     <h6 class="grid-item-text" >Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, ,<br> sed do eiusmod tempor incididunt ut labore</h6> 

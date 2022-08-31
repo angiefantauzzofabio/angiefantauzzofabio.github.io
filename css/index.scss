@@ -9,7 +9,7 @@ $mainFont: 'DM Sans', sans-serif, arial;
 
 body{
    background-color: $black;
-
+   transition: background-color 1s ease;
  }
 
 
