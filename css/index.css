@@ -204,6 +204,9 @@ body {
   color: #1D1A1B;
 }
 
+.container-ending {
+  padding: 5% 15%;
+}
 .container-ending-title {
   color: #F8C02D;
   text-align: center;
