@@ -129,6 +129,11 @@ body {
   text-align: center;
   color: #F8C02D;
 }
+@media (max-width: 800px) {
+  .container-sections .container-sections-subtitle {
+    font-size: 0.8rem;
+  }
+}
 .container-sections-cards {
   display: flex;
   flex-direction: row;

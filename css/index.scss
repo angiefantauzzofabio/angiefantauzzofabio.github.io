@@ -161,6 +161,12 @@ body{
         text-align: center;
         color: $yellow;
     }
+
+    @media (max-width: 800px) {
+        .container-sections-subtitle {
+            font-size: 0.8rem;
+        }
+    }
     &-cards{
         display: flex;
         flex-direction: row;
