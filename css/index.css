@@ -149,7 +149,7 @@ body {
   flex-direction: row;
   justify-content: center;
   padding: 5% 5%;
-  gap: 15vh;
+  gap: 5vw;
 }
 .container-sections-cards .card1 {
   border-color: #1D1A1B;
