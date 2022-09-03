@@ -49,6 +49,7 @@ body{
         font-style: $mainFont;
     }
     &-sections-buttons{
+        padding: 1% 5%;
         display: flex;
         justify-content: center;
         gap: 15vw;

@@ -35,6 +35,7 @@ body {
   font-style: "DM Sans", sans-serif, arial;
 }
 .container-us-sections-buttons {
+  padding: 1% 5%;
   display: flex;
   justify-content: center;
   gap: 15vw;
