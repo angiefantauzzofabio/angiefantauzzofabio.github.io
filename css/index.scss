@@ -252,7 +252,6 @@ body{
             &-text{
                 color: $yellow;
                 font-weight: bold;
-                
                 margin-top: 20vh;
                 font-style: $mainFont;
             }
@@ -260,8 +259,8 @@ body{
 
         @media (max-width: 800px) {
             .grid-item-text{
-                margin-top: 0;
-                font-size: 1rem;
+                margin-top: 5vh;
+                font-size: 0.7rem;
                 font-style: $mainFont;
                 max-width: 100%;
             }
