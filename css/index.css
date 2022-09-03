@@ -260,7 +260,7 @@ body {
 .container-footer .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 4rem;
+  gap: 2rem;
 }
 .container-footer-logo {
   max-width: 100%;
