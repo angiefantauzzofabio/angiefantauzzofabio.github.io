@@ -214,7 +214,6 @@ body {
 }
 @media (max-width: 800px) {
   .container-sections .grid-container .grid-item-text {
-    margin-top: 5vh;
     font-size: 0.7rem;
     font-style: "DM Sans", sans-serif, arial;
     max-width: 100%;
