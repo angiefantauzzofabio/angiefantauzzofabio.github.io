@@ -21,6 +21,9 @@ body{
     margin: auto;
     margin-bottom: 5vh;
     margin-top: 5vh;
+    border: 3px solid $yellow;
+    height: 0.5rem;
+    background-color: $yellow;
 }
 
 
@@ -111,6 +114,11 @@ body{
  }
 
  .container-news{
+
+    .carousel{
+        width: 80%;
+        margin: 0 auto;
+    }
     &-title{
         color: $yellow;
         text-align: center;
@@ -206,6 +214,7 @@ body{
         height: auto;
         justify-items: center;
         margin-bottom: 10vh;
+        margin-top: 5vh;
 
     }
 
@@ -227,7 +236,7 @@ body{
             &-text{
                 color: $yellow;
                 font-weight: bold;
-                font-size: 1rem;
+                
                 margin-top: 20vh;
                 font-style: $mainFont;
             }
@@ -236,7 +245,7 @@ body{
         @media (max-width: 800px) {
             .grid-item-text{
                 margin-top: 0;
-                font-size: 0.5rem;
+                font-size: 1rem;
                 font-style: $mainFont;
                 max-width: 100%;
             }

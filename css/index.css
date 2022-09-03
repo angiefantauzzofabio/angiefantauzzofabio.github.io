@@ -11,6 +11,9 @@ body {
   margin: auto;
   margin-bottom: 5vh;
   margin-top: 5vh;
+  border: 3px solid #F8C02D;
+  height: 0.5rem;
+  background-color: #F8C02D;
 }
 
 .container-us-title {
@@ -87,6 +90,10 @@ body {
   }
 }
 
+.container-news .carousel {
+  width: 80%;
+  margin: 0 auto;
+}
 .container-news-title {
   color: #F8C02D;
   text-align: center;
@@ -169,6 +176,7 @@ body {
   height: auto;
   justify-items: center;
   margin-bottom: 10vh;
+  margin-top: 5vh;
 }
 .container-sections .grid-container {
   display: grid;
@@ -187,14 +195,13 @@ body {
 .container-sections .grid-container .grid-item-text {
   color: #F8C02D;
   font-weight: bold;
-  font-size: 1rem;
   margin-top: 20vh;
   font-style: "DM Sans", sans-serif, arial;
 }
 @media (max-width: 800px) {
   .container-sections .grid-container .grid-item-text {
     margin-top: 0;
-    font-size: 0.5rem;
+    font-size: 1rem;
     font-style: "DM Sans", sans-serif, arial;
     max-width: 100%;
   }
