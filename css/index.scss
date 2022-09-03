@@ -203,6 +203,19 @@ body{
         .card-img-top{
             z-index: -1;
         }
+        .card-img-top-text{
+            color: $grey;
+            position: absolute;
+            margin: 0 auto;
+            text-align: center;
+            font-weight: bold;
+        }
+        @media (max-width: 800px) {
+            .card-img-top-text {
+                font-size: 0.8rem;
+            }
+        }
+
     }
     &-img{
         background-position: center;
