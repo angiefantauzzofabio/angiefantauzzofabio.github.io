@@ -188,7 +188,7 @@ body{
         .card1{
             border-color: $black;
             border-radius: none;
-            background-image: linear-gradient(to right, $yellow , transparent);
+            background-image: linear-gradient(to right, $yellow ,#F8D57A,  transparent);
             width: 30rem;
             display: flex;
          
@@ -196,7 +196,7 @@ body{
         .card2{
             border-color: $black;
             border-radius: none;
-            background-image: linear-gradient(to right, $red , transparent);
+            background-image: linear-gradient(to right, $red ,$light-red, transparent);
             width: 30rem;
             display: flex;
            
@@ -211,10 +211,12 @@ body{
             margin: 0 auto;
             text-align: center;
             font-weight: bold;
+            margin-top: 3vh;
         }
         @media (max-width: 800px) {
             .card-img-top-text {
                 font-size: 0.8rem;
+                margin-top: 1vh;
             }
         }
 
@@ -259,11 +261,11 @@ body{
 
         @media (max-width: 800px) {
             .grid-item-text{
-                margin-top: 3vh;
+                margin-top: 1vh;
                 font-size: 0.7rem;
-                font-style: $mainFont;
                 max-width: 100%;
             }
+
         }
 
       }

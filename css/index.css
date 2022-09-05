@@ -154,14 +154,14 @@ body {
 .container-sections-cards .card1 {
   border-color: #1D1A1B;
   border-radius: none;
-  background-image: linear-gradient(to right, #F8C02D, transparent);
+  background-image: linear-gradient(to right, #F8C02D, #F8D57A, transparent);
   width: 30rem;
   display: flex;
 }
 .container-sections-cards .card2 {
   border-color: #1D1A1B;
   border-radius: none;
-  background-image: linear-gradient(to right, #FF2E00, transparent);
+  background-image: linear-gradient(to right, #FF2E00, #FF614C, transparent);
   width: 30rem;
   display: flex;
 }
@@ -174,10 +174,12 @@ body {
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
+  margin-top: 3vh;
 }
 @media (max-width: 800px) {
   .container-sections-cards .card-img-top-text {
     font-size: 0.8rem;
+    margin-top: 1vh;
   }
 }
 .container-sections-img {
@@ -214,9 +216,8 @@ body {
 }
 @media (max-width: 800px) {
   .container-sections .grid-container .grid-item-text {
-    margin-top: 3vh;
+    margin-top: 1vh;
     font-size: 0.7rem;
-    font-style: "DM Sans", sans-serif, arial;
     max-width: 100%;
   }
 }
