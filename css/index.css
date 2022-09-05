@@ -42,6 +42,8 @@ body {
 }
 .container-us .btn {
   border-radius: 0%;
+  width: fit-content;
+  height: fit-content;
 }
 
 .ingreso-section {
