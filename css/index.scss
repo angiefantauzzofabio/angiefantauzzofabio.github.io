@@ -126,7 +126,7 @@ body{
         color: $yellow;
         text-align: center;
         margin: 0 auto;
-        padding: 5% 5%;
+        padding: 3% 3%;
         font-style: $mainFont;
     }
 
@@ -213,7 +213,8 @@ body{
             margin: 0 auto;
             text-align: center;
             font-weight: bold;
-            margin-top: 3vh;
+            margin-top: 4vh;
+            margin-left: 2vw;
         }
         @media (max-width: 800px) {
             .card-img-top-text {

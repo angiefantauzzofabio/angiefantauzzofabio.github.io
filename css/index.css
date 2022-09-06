@@ -101,7 +101,7 @@ body {
   color: #F8C02D;
   text-align: center;
   margin: 0 auto;
-  padding: 5% 5%;
+  padding: 3% 3%;
   font-style: "DM Sans", sans-serif, arial;
 }
 .container-news-cards {
@@ -176,7 +176,8 @@ body {
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
-  margin-top: 3vh;
+  margin-top: 4vh;
+  margin-left: 2vw;
 }
 @media (max-width: 800px) {
   .container-sections-cards .card-img-top-text {
