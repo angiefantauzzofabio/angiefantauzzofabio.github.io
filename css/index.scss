@@ -145,6 +145,11 @@ body{
          .card-text{
             color: $white;
             font-style: $mainFont;
+            font-size: 1rem;
+         }
+         .btn-card{
+            color: $yellow;
+            text-decoration: none;
          }
 
     }
@@ -153,6 +158,15 @@ body{
         .flex-container {
             flex-direction: column;
             max-width: 100%;
+        }
+        .card-text{
+            display: none;
+        }
+        .card-title{
+            font-size: 0.8rem;
+        }
+        .btn-card{
+            display: inline;
         }
     }
 
@@ -408,6 +422,12 @@ body{
     font-family: $mainFont;
 
 }
+.logo{
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 50px;
+}
 
 // Estas variables son de bootstrap, lo que hago para saber como modificarlas es probar que hace cada una desde el inspeccionar elementos
 // del navegador, meter mano hasta encontrar como lo quiero dejar y pongo las propiedades que le modifque aca
@@ -530,6 +550,71 @@ body{
     }
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    margin: 0 auto;
+    background-color: $yellow;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: $yellow;
+  }
 
 
 

@@ -13,7 +13,7 @@
         <header>
         <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">LOGO</a>
+            <a class="navbar-brand" href="#"><img src="../assets/logo90.png" class="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,16 +21,13 @@
             <div class="collapse navbar-collapse" id="navbarsExample04">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                    <a class="nav-link active" aria-current="page" href="#nosotros">NOSOTROS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#ingreso">INGRESO</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#novedades">NOVEDADES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#colaborar">NOSOTROS</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#dptoTecnico" data-bs-toggle="dropdown" aria-expanded="false">DEPARTAMENTO TÉCNICO</a>
@@ -93,7 +90,7 @@
 
             <!--NOSOTROS-->
         <hr class="lines">
-        <div class="container-us">
+        <div class="container-us" id="nosotros">
             <h1 class="container-us-title">SOMOS VOLUNTARIOS</h1>
             <div class="container-us-sections">
                 <div class="container-us-sections-info">
@@ -119,18 +116,50 @@
         <div class="ingreso" id="ingreso">
             <div class="ingreso-section">
                 <img src="../assets/ingresa.png" class="ingreso-section-img">
-                <button type="button" class="btn btn-primary2 btn-lg" onclick="window.open('https:www.google.com/intl/es-419_ar/forms/about/')" >INGRESÁ A BOMBEROS</button> 
+                <button data-toggle="modal" data-target="#exampleModal" id="myBtn" type="button" class="btn btn-primary2 btn-lg">INGRESÁ A BOMBEROS</button> 
                 <h1>INGRESÁ <br> AYUDÁ <br> FORMÁ PARTE</h1>
             </div>
         </div>
+
+                <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Requisitos</h2>
+                <p> 
+                    📍 Vivir en el partido 
+                    <br>😃 Tener entre 18 y 37 años 
+                    <br>🎓 Estudios primarios completos 
+                    <br>💡 Realizar un actividad licita, trabajar o estudiar
+                    <br>💪 Apto físico 
+                    <br>✅ No tener antecedentes penales 
+                </p>
+                <br>
+                <h4>Si cumples con los requisitos y tenes ganas de formar parte no dudes en anotarte! A la brevedad nos comunicaremos con vos.</h4>
+                <br>
+                <form action="/action_page.php">
+                    <label for="fname">Nombre</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Nombre..">
+                
+                    <label for="lname">Apellido</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Apellido..">
+
+                    <label for="lname">Contanos</label>
+                    <input type="text" id="text" name="text" placeholder="Me gustaria incribirme para hacer el curso de aspirante...">
+
+                    </select>
+                
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+      
+
         <hr class="lines">
         
 
-        <div class="container-news" id="novedades">
-
-           
-           
-
+        <div class="container-news"  id="novedades">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="margin: 0 auto; padding: 3% 10%;">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -154,7 +183,7 @@
               </div>
               <hr class="lines">
 
-              
+
 
             <h1 class="container-news-title">NOVEDADES</h1>
                 <div class="container-news-cards">
@@ -162,23 +191,28 @@
                 <div class="card" style="width: 25%;">
                     <img src="../assets/Rectangle 44.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <p class="card-text">PRESUPUESTO PARTICIPATIVO 2022</p>
+                        <h5 class="card-title" style="color:#E5E5E5;">Presupuesto participativo</h5>
+                        <p class="card-text"></p>
+                        <a  href= "#" class="btn-card btn-primary">+</a>
                     </div>
                 </div>
                 
                 <div class="card" style="width: 25%;">
                     <img src="../assets/Rectangle 44.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <p class="card-text">VISITAS ITINERANTES</p>
-                      <p class="card-text">En el marco de los festejos de los 90 aniversario de nuestra institucion hemos realizado en la plaza Vianini Villa Marteli la expocision de marteriales, destrezas bomberiles, muestra de moviles y actividad para los mas pequeños.</p>
+                        <h5 class="card-title" style="color:#E5E5E5;">Visitas itinerantes</h5>
+                        <p class="card-text">En el marco de los festejos de los 90 aniversario de nuestra institucion hemos realizado en la plaza Vianini Villa Marteli la expocision de marteriales, destrezas bomberiles, muestra de moviles y actividad para los mas pequeños.</p>
+                        <a href="#" class="btn-card btn-primary">+</a>
                     </div>
                 </div>
         
                 <div class="card" style="width: 25%;">
                     <img src="../assets/Rectangle 44.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <p class="card-text">PLAN FRIO</p>
-                      <p class="card-text">Junto a la MVL y entidades intermedias, duranrte los meses de Junio, Julio, Agosto, hemos realizado recorridas por el partido entregando viandas y frazadas a personas en situacion de calle. </p>
+                        <h5 class="card-title" style="color:#E5E5E5;">Plan frio</h5>
+                        <p class="card-text">Junto a la MVL y entidades intermedias, duranrte los meses de Junio, Julio, Agosto, hemos realizado recorridas por el partido entregando viandas y frazadas a personas en situacion de calle. </p>
+                        <a href="#" class="btn-card btn-primary">+</a>
+                        
                     </div>
                 </div>
 
@@ -195,6 +229,7 @@
                     <img src="../assets/dptotecnico1.png" class="card-img-top" alt="...">
                     <h3 class="card-img-top-text">ASESORAMIENTO <br> TECNICO</h3>
                 </div> 
+      
                 <div class="card2" >
                     <img src="../assets/dptotecnico1.png" class="card-img-top" alt="...">
                     <h3 class="card-img-top-text">CAPACITACION Y <br> CURSOS</h3>
@@ -250,14 +285,23 @@
                 <div class="grid-container">
                     <div class="grid-item">
                         <img src="../assets/logo.png" class="container-footer-logo"z> 
-                        <div class="container-footer-descrp"><p class="container-footer-descrp-text"><p class="container-footer-info-text">Av. Maipú 1669
-                            Vicente López
-                            <br> <br>
-                            Emergencias: 4795-2222
-                            <br><br>
+                        <div class="container-footer-descrp"><p class="container-footer-descrp-text"><p class="container-footer-info-text">
+                            Cuartel central <br>
+                            Av. Maipú 1669, Vicente López
+                            <br>
+                            Emergencias: 4795-2222/100
+                            <br>
                             Administración: 4795-2002
-                            <br><br>
+                            <br>
                             Mail:
+                            <br><br>
+                            Destacamento 1<br>
+                            Dr. José Ingenieros 5496, Carapachay<br>
+                            Telefono: 4766-2222
+                            <br><br>
+                            Destacamento 2<br>
+                            Zufriategui 5298, Villa Martelli<br>
+                            Telefono: 4709-3732
                         </p></div>
                     </div>
                     <div class="grid-item">
