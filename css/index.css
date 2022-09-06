@@ -353,12 +353,11 @@ body {
 }
 
 .hero {
-  height: 70vh;
+  height: 150vh;
   width: 100%;
-  background-image: url(../assets/background1.png);
+  background-image: url(../assets/portada2.jpg);
   background-size: cover;
-  background-position: 75%;
-  filter: grayscale(80%);
+  background-position: 50%;
 }
 
 .counter {
