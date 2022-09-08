@@ -173,7 +173,6 @@ body{
             .modal-content {
                 justify-content: center;
                 margin: 0 auto; 
-                padding: 20px;
                 width: 70%; /* Could be more or less, depending on screen size */
             }
             
@@ -336,7 +335,7 @@ body{
         @media (max-width: 800px) {
             .card-img-top-text {
                 font-size: 0.5rem;
-                margin-top: 0vh;
+                margin-top: 0;
             }
         }
 

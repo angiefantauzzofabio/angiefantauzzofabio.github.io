@@ -144,7 +144,6 @@ body {
 .container-news-cards .modal-content {
   justify-content: center;
   margin: 0 auto;
-  padding: 20px;
   width: 70%; /* Could be more or less, depending on screen size */
 }
 .container-news-cards .close2 {
@@ -295,7 +294,7 @@ input[type=submit]:hover {
 @media (max-width: 800px) {
   .container-sections-cards .card-img-top-text {
     font-size: 0.5rem;
-    margin-top: 0vh;
+    margin-top: 0;
   }
 }
 .container-sections .modal {
