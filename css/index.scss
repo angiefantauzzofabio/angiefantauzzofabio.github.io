@@ -216,8 +216,7 @@ body{
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color:transparent /* Fallback color */
   }
   
   /* Modal Content/Box */
@@ -243,7 +242,6 @@ body{
     cursor: pointer;
   }
 
-  
 
   input[type=text], select {
     width: 100%;
@@ -321,8 +319,9 @@ body{
         .card-img-top{
             z-index: -1;
         }
-        .card-img-top-text{
+        .card-img-top-btn{
             color: $grey;
+            background-color: transparent;
             position: absolute;
             margin: 0 auto;
             text-align: center;
@@ -333,11 +332,48 @@ body{
         @media (max-width: 800px) {
             .card-img-top-text {
                 font-size: 0.8rem;
-                margin-top: 1vh;
+                margin-top: 0;
             }
         }
 
     }
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        margin: 0 auto;
+        top: 0;
+        width: 100%; /* Full width */
+        height: auto; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: transparent;
+   
+      }
+      
+      /* Modal Content/Box */
+      .modal-content {
+        margin: 15%; /* 15% from the top and centered */
+        width: auto; /* Could be more or less, depending on screen size */
+        height: 100%;
+        justify-content: center;
+        font-size: 0.8rem;
+      }
+      
+      /* The Close Button */
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
 
     &-img{
         background-position: center;

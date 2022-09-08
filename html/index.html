@@ -41,7 +41,17 @@
                     <a class="nav-link" href="#colaboradores">COLABORADORES</a>
                 </li>
                 <li class="nav-item" >
-                    <a style=" color: #1D1A1B; background-color: #F8C02D ;" class="nav-link">COLABORAR</a>
+                  <!--   <a style=" color: #1D1A1B; background-color: #F8C02D ;" class="nav-link">COLABORAR</a>-->
+                    <button style=" color: #1D1A1B; background-color: #F8C02D ;" id="botonQR"  class="nav-link" >COLABORAR</button>
+                    <div id="qr" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content" style="width: 50%; height: auto;">
+                            <span class="close3">&times;</span>
+                            <h4>Este QR te llevara a mercado pago</h4>
+                           <img src="../assets/qr-code.webp" style="height: auto; width:30vw; margin: 0 auto;">
+                        </div>
+                    </div>
+
                 </li>
                 </ul>
             </div>
@@ -248,12 +258,44 @@
             <div class="container-sections-cards">
                 <div class="card1">
                     <img src="../assets/dptotecnico1.png" class="card-img-top" alt="...">
-                    <h3 class="card-img-top-text">ASESORAMIENTO <br> TECNICO</h3>
+                    <button id="botonDtoTec1" class="card-img-top-btn">ASESORAMIENTO <br> TECNICO</button>
+                    <div id="dtoTec1" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close4">&times;</span>
+                            <h2>Asesoramiento técnico</h2> <br>
+                            <p> 
+                                Asesoramiento técnico en protección contra incendios, extinción y evacuación.<br> <br>
+                            <p>
+                            <p style=" text-decoration: underline; color:#3897f0">
+                                departamento.tecnico@bomberosvicentelopez.com.ar 
+                            </p>
+                        </div>
+                    </div>
+
                 </div> 
       
                 <div class="card2" >
                     <img src="../assets/dptotecnico1.png" class="card-img-top" alt="...">
-                    <h3 class="card-img-top-text">CAPACITACION Y <br> CURSOS</h3>
+                    <button id="botonDtoTec2" class="card-img-top-btn">CAPACITACIONES <br> Y CURSOS</button>
+                    <div id="dtoTec2" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close5">&times;</span>
+                            <h2>Cursos y capacitaciones</h2>
+                            <p> 
+                                • Clase de fuegos y uso de extintores<br>
+                                • Primero auxilios<br>
+                                • Evacuación <br>
+                                • Formación de brigada de incendio <br>
+                                • Uso de mangas<br>
+                                Para mas informacion contactese a <br>departamento.tecnico@bomberosvicentelopez.com.ar 
+                            </p> <br><br>
+                            <p style=" text-decoration: underline; color:#3897f0">
+                                departamento.tecnico@bomberosvicentelopez.com.ar 
+                            </p>
+                        </div>
+                    </div>
                 </div> 
             </div>
 
