@@ -162,11 +162,9 @@ body{
                 position: fixed; /* Stay in place */
                 z-index: 1; /* Sit on top */
                 margin: 0 auto;
-                top: 0;
-                width: 100%; /* Full width */
+                width:100%; /* Full width */
                 height: 100%; /* Full height */
-                overflow: auto; /* Enable scroll if needed */
-                background-color: transparent;
+                background-color: $light-red;
             }
             
             /* Modal Content/Box */
