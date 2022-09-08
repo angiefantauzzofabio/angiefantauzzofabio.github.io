@@ -90,6 +90,7 @@ body {
   .ingreso-section .btn {
     font-size: 0.5rem;
     max-width: 100%;
+    margin-top: 3em;
   }
 }
 
