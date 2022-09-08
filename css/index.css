@@ -94,10 +94,11 @@ body {
   }
 }
 
-.container-news .carousel {
+.container-carousel .carousel {
   width: 80%;
   margin: 0 auto;
 }
+
 .container-news-title {
   color: #F8C02D;
   text-align: center;
