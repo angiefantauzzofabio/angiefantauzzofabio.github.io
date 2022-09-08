@@ -294,6 +294,7 @@ input[type=submit]:hover {
   .container-sections-cards .card-img-top-btn {
     font-size: 0.8rem;
     margin-top: 0vh;
+    margin-left: 0.5vw;
   }
 }
 .container-sections .modal {
