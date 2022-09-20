@@ -31,8 +31,9 @@ body {
 }
 .container-us-sections-info-text {
   color: #F8C02D;
-  padding: 5% 5%;
+  padding: 5% 15%;
   font-style: "DM Sans", sans-serif, arial;
+  gap: 1rem;
 }
 .container-us-sections-buttons {
   padding: 1% 5%;

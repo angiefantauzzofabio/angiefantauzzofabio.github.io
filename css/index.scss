@@ -45,8 +45,9 @@ body{
     }
     &-sections-info-text{
         color: $yellow;
-        padding: 5% 5%;
+        padding: 5% 15%;
         font-style: $mainFont;
+        gap: 1rem;
     }
     &-sections-buttons{
         padding: 1% 5%;
