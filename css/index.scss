@@ -178,7 +178,7 @@ body{
             .close2 {
                 color: #aaa;
                 float: right;
-                font-size: 28px;
+                font-size: 80px;
                 font-weight: bold;
             }
             
@@ -232,7 +232,7 @@ body{
   .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 80px;
     font-weight: bold;
   }
   
@@ -367,9 +367,16 @@ body{
       .close {
         color: #aaa;
         float: right;
-        font-size: 28px;
+        font-size: 80px;
         font-weight: bold;
       }
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 80px;
+        font-weight: bold;
+      }
+      
       
       .close:hover,
       .close:focus {
