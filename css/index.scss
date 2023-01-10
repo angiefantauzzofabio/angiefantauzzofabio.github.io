@@ -193,7 +193,8 @@ body{
     }
 
     @media (max-width: 800px) {
-        .flex-container {
+        .container-news-cards{ 
+            display: flex;
             flex-direction: column;
             max-width: 100%;
         }
