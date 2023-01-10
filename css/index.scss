@@ -178,7 +178,7 @@ body{
             .close2 {
                 color: #aaa;
                 float: right;
-                font-size: 80px;
+                font-size: 40px;
                 font-weight: bold;
             }
             
@@ -194,9 +194,12 @@ body{
 
     @media (max-width: 800px) {
         .container-news-cards{ 
-            display: flex;
             flex-direction: column;
-            max-width: 100%;
+            align-items: center;
+            column-gap: none;
+        }
+        .container-news-card{ 
+            margin-top: 0vh;
         }
         .card-text{
             display: none;
@@ -233,7 +236,7 @@ body{
   .close {
     color: #aaa;
     float: right;
-    font-size: 80px;
+    font-size: 40px;
     font-weight: bold;
   }
   
@@ -368,7 +371,7 @@ body{
       .close {
         color: #aaa;
         float: right;
-        font-size: 80px;
+        font-size: 40px;
         font-weight: bold;
       }
       .close {
@@ -618,7 +621,15 @@ body{
     background-image: url(../assets/portada2.jpg);
     background-size: cover;
     background-position: 50%;
+
+    @media (max-width: 800px) {
+        .hero{
+            height: 0vh;
+        }
+           
+    }
 }
+
 
 
 .counter {
